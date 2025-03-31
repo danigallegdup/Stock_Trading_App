@@ -4,14 +4,15 @@ A containerized stock trading platform built to endure high-throughput, real-wor
 
 Performance bottlenecks were addressed through targeted JMeter stress testing, Redis-based concurrency control, and HAProxy-NGINX experimentation. Complexities like VM crashes, mutex race conditions, and HTTP timeouts were resolved through iterative refactoring and architecture rollback strategies.
 
-[![Dockerized](https://img.shields.io/badge/Built%20With-Docker-blue)](https://www.docker.com/)  
-[![JMeter Tested](https://img.shields.io/badge/Tested%20With-JMeter-red)](https://jmeter.apache.org/)  
+[![Dockerized](https://img.shields.io/badge/Built%20With-Docker-blue)](https://www.docker.com/)
+[![JMeter Tested](https://img.shields.io/badge/Tested%20With-JMeter-red)](https://jmeter.apache.org/)
 [![Scalability-Optimized](https://img.shields.io/badge/Scalability-Optimized-brightgreen)](#)
 [![JWT Auth](https://img.shields.io/badge/Security-JWT%20Auth-yellowgreen)](https://jwt.io/)
 [![Redis Caching](https://img.shields.io/badge/Concurrency-Redis%20Mutex-blueviolet)](https://redis.io/)
 [![Custom Matching Engine](https://img.shields.io/badge/Engine-Custom%20FIFO%20Matching-9cf)](#)
 [![Microservices Architecture](https://img.shields.io/badge/Architecture-Microservices-informational)](#)
 [![High Availability](https://img.shields.io/badge/Design-Fault%20Tolerant-success)](#)
+
 
 ## 📊 Benchmark Results
 
