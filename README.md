@@ -4,6 +4,14 @@ A containerized stock trading platform built to endure high-throughput, real-wor
 
 Performance bottlenecks were addressed through targeted JMeter stress testing, Redis-based concurrency control, and HAProxy-NGINX experimentation. Complexities like VM crashes, mutex race conditions, and HTTP timeouts were resolved through iterative refactoring and architecture rollback strategies.
 
+| Simulated Users | Error Rate   |
+|------------------|--------------|
+| 1,000            | 0.00%        |
+| 10,000           | 3.94%        |
+| 12,000           | 6.07%        |
+| 15,000           | 8.70%        |
+| **17,000**       | **14.04%**   |
+
 [![Dockerized](https://img.shields.io/badge/Built%20With-Docker-blue)](https://www.docker.com/)
 [![JMeter Tested](https://img.shields.io/badge/Tested%20With-JMeter-red)](https://jmeter.apache.org/)
 [![Scalability-Optimized](https://img.shields.io/badge/Scalability-Optimized-brightgreen)](#)
@@ -25,16 +33,7 @@ Performance bottlenecks were addressed through targeted JMeter stress testing, R
 ![: PIE chart](day-trading-app/12k.png)
 [Result for 15k Users: 6.07% Error](./results/12k_users.pdf)
 
-| Simulated Users | Error Rate   |
-|------------------|--------------|
-| 1,000            | 0.00%        |
-| 10,000           | 3.94%        |
-| 12,000           | 6.07%        |
-| 15,000           | 8.70%        |
-| **17,000**       | **14.04%**   |
-
-
-## 🧪 Performance Testing Workflow
+## Performance Testing Workflow
 
 > Port: `4000`  
 
