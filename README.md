@@ -14,7 +14,16 @@ Performance bottlenecks were addressed through targeted JMeter stress testing, R
 [![High Availability](https://img.shields.io/badge/Design-Fault%20Tolerant-success)](#)
 
 
-## 📊 Benchmark Results
+## Results
+
+![Result for 17k Users: PIE chart](day-trading-app/17k.png)
+[Result for 17k Users: 14.04% Error](./results/17k_users_best.pdf)
+
+![: PIE chart](day-trading-app/15k.png)
+[Result for 15k Users: 8.70% Error](./results/15k_users.pdf)
+
+![: PIE chart](day-trading-app/12k.png)
+[Result for 15k Users: 6.07% Error](./results/12k_users.pdf)
 
 | Simulated Users | Error Rate   |
 |------------------|--------------|
@@ -84,47 +93,3 @@ View detailed test results:
 ```bash
 docker compose down -v
 ```
-
----
-
-## Project Highlights
-
-- **Simulates 17,000+ concurrent users**
-- **Custom-built FIFO matching engine**
-- **Secure JWT authentication**
-- **Fully containerized with Docker Compose**
-- **Stress-tested with JMeter & dynamic load scripts**
-- **Persistent storage with transactional integrity**
-- **Optimized for fault-tolerance and concurrency control**
-
----
-
-## 🔧 Tech Stack
-
-| Category         | Tech                             |
-|------------------|----------------------------------|
-| Backend API      | Node.js, Express.js              |
-| Containerization | Docker, Docker Compose           |
-| Load Testing     | Apache JMeter                    |
-| Authentication   | JWT (JSON Web Tokens)            |
-| Caching/Locks    | Redis (for concurrency control)  |
-| Logging & Results| HTML Reports via JMeter Dashboard|
-
----
-## 📂 Repo Structure
-
-```
-├── backend/
-│   ├── auth/                    # Handles login, registration, and JWT token generation
-│   ├── config/                  # App configuration (e.g., DB, constants)
-│   ├── matchingEngine/          # Custom FIFO matching engine for order execution
-│   ├── middleware/              # Authentication and error-handling middleware
-│   ├── order/                   # Endpoints and logic for placing and managing orders
-│   ├── transaction/             # Wallet and stock transaction tracking
-│   ├── userManagement/          # User profile and account services
-│   ├── Dockerfile               # Container config for backend service
-│   ├── index.js                 # Main server entry point
-│   ...
-├── docker-compose.yml           # Docker orchestration for all services
-```
-
