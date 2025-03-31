@@ -1,4 +1,4 @@
-# Stock Trading App – High-Performance Distributed System
+# Stock Trading App – Scalable Distributed System
 
 A containerized stock trading platform built to endure high-throughput, real-world simulation; sustaining over 17,000 concurrent users under load. The system executes market and limit orders via a custom FIFO matching engine, ensures atomic transaction integrity, and scales through Docker-managed microservices.
 
